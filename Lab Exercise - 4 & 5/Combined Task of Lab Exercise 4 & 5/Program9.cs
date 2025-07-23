@@ -10,11 +10,12 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            int i = 1;
-            while (i <= 10)
+            Console.WriteLine("Enter Number : ");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            for(int i=1; i<=10; i++)
             {
-                Console.WriteLine(i);
-                i++;
+                Console.WriteLine(num + "*" + i + "=" + num*i );
             }
         }
     }
